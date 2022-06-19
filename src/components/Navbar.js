@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 
-import Logo from "../assets/images/logo.webp";
+import Logo from "../assets/images/logo.png";
 
 const Navbar = () => (
   <Stack
@@ -46,7 +46,10 @@ const Navbar = () => (
         Exercises
       </a> */}
       <Link style={{ textDecoration: "none", color: "#3A1212" }} to="/todolist">
-        Todo List
+        Todolist
+      </Link>
+      <Link style={{ textDecoration: "none", color: "#3A1212" }} to="/clock">
+        Stopwatch
       </Link>
     </Stack>
   </Stack>
