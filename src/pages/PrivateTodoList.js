@@ -88,29 +88,29 @@ export default function PrivateTodoList() {
               }}
             >
               <input
-                style={{ margin: "3px" }}
+                style={{ margin: "3px", textAlign: "center" }}
                 type="checkbox"
                 id="isItChecked"
               ></input>
-              {task.title}
+              {task.title}{" "}
+              <Button
+                className=" mt-2 btn btn-warning material-icons"
+                style={{
+                  width: "10px",
+                  margin: "5px",
+                  height: "20px",
+                  padding: "0px",
+                  color: "red",
+                  display: "inlineBlock",
+                  verticalAlign: "middle",
+                  transform: "translateX(-10px)",
+                }}
+                variant="outlined"
+                onClick={() => handleDelete(task)}
+              >
+                delete
+              </Button>
             </span>
-          </Stack>
-
-          <Stack className="col-1">
-            <Button
-              className=" mt-2 btn btn-warning material-icons"
-              style={{
-                width: "10px",
-                margin: "5px",
-                height: "20px",
-                padding: "0px",
-                color: "red",
-              }}
-              variant="outlined"
-              onClick={() => handleDelete(task)}
-            >
-              delete
-            </Button>
           </Stack>
         </React.Fragment>
       ))}
