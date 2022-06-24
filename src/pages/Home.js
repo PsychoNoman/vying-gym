@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 import Exercises from "../components/Exercises";
 import SearchExercises from "../components/SearchExercises";
-
+import Footer from "../components/Footer";
 const Home = () => {
   const [exercises, setExercises] = useState([]);
   const [bodyPart, setBodyPart] = useState("all");
@@ -20,6 +20,7 @@ const Home = () => {
         exercises={exercises}
         bodyPart={bodyPart}
       />
+      <Footer />
     </Box>
   );
 };
