@@ -1,5 +1,7 @@
 body {
   background-color: #fffafb;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
+    monospace;
 }
 
 * {
