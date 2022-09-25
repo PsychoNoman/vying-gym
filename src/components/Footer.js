@@ -17,7 +17,12 @@ const Footer = () => (
       textAlign="center"
       pb="30px"
     >
-      Load Exercises may not work because of too many requests
+      Load Exercises may not work because of too many requests <br />
+      <a href="https://daily-exercise-reminder.vercel.app/" target="_blank">
+        Subscribe
+      </a>
+      -to our email subscription service that reminds you to be active when
+      checking your email
     </Typography>
   </Box>
 );
